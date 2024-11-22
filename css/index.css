@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {font-family: 'GmarketSansMedium'; min-width: 1280px;}
+/* 헤더 */
+header {text-align: center; height: 81px; position: relative;}
+header h1 {position: absolute; left: 50px; top: 0; padding: 14px 0;}
+header h1 a {display: block; width: 110px; height: 48px;  color: transparent; background: url(../img/sp_com.png) no-repeat -300px 0;}
+header .spot {position: absolute; right: 50px; top: 0;}
+header .lnb ul{display: flex; justify-content: center;}
+header .lnb a {display: block; height: 81px; padding: 0 35px; font-size: 17px; color: #333; line-height: 81px;}
+header .lnb a span {position: relative;}
+header .lnb a:hover {color: #2d5b79; font-weight: 700;}
+header .lnb a:hover span::after {position: absolute; left: 0; bottom: -9px; content: ""; display: block; height: 1px; width: 100%; background-color: #2d5b79;}
+header .spot ul{display: flex;}
+header .spot li {position: relative;}
+header .spot ul li::after {content: ""; position: absolute; left: 0; top: 50%; width: 1px; height: 7px; background-color: #ccc; transform: translateY(-50%);}
+header .spot a {display: block; height: 84px; padding: 0 10px; line-height: 81px;}
+header .spot li:first-child::after {display: none;}
+header .spot li:last-child a {padding-right: 0;}
+
+/* 슬라이드 영역 */
+.visual {padding: 0 50px; position: relative;}
+.visual .con > div {height: 640px;}
+.visual .con .slide {background: url(../img/bg_main01.jpg) no-repeat center; color: #fff; font-size: 32px; position: relative; line-height: 46px;}
+.visual .con .slide p {font-size: 20px; padding-top: 19px;}
+.visual .con .slide .txt {position: absolute; left: 50%; top: 175px;}
+/* 슬라이드 공통 */
+.slide .prev,
+.slide .next {display: block; position: absolute; width: 25px; height: 47px; top: 50%; transform: translateY(-50%); background-image: url(../img/sp_com.png); color: transparent; z-index: 15;}
+.slide .prev {left: 82px; background-position: -128px -60px;}
+.slide .next {right: 82px; background-position: -158px -60px;}
+.slide .control {position: absolute; left: 0; bottom: 55px; width: 100%; text-align: center; }
+.slide .control a {color: transparent;}
+.slide .control > div {display: inline-block; position: relative; padding-right: 45px; z-index: 15;}
+.slide .control > div > div {position: absolute; right: 0; display: flex; top: -3px;}
+.slide .control > div > div a {overflow: hidden; display: flex; width: 8px; height: 9px; background-image: url(../img/sp_com.png); margin-right: 7px; opacity: 0.5;}
+.slide .control > div > div a.on {opacity: 1;}
+.slide .control > div > div a.play {background-position: -108px -72px}
+.slide .control > div > div a.pause {background-position: -108px -60px}
+.slide .control ul {display: flex; vertical-align: bottom;}
+.slide .control li {padding: 0 3px;}
+.slide .control li.on a {background-color: #fff;}
+.slide .control li a {display: block; width: 50px; height: 3px; background-color: rgba(255, 255, 255, 0.5); }
+
+/* 제품정보 */
+.product a {color: #001829; font-size: 15px; display: block; text-align: center;}
+.product a:hover {color: #2d5b79; font-weight: 700; }
+.product a:before {content: ""; background: url(../img/sp_com.png) no-repeat; display: block; width: 64px; height: 52px; margin-bottom: 26px;}
+.product li:nth-child(1) a::before {background-position: -3px -118px;}
+.product li:nth-child(2) a::before {background-position: -75px -118px;}
+.product li:nth-child(3) a::before {background-position: -148px -118px;}
+.product li:nth-child(4) a::before {background-position: -219px -118px;}
+.product li:nth-child(5) a::before {background-position: -292px -118px;}
+.product li:nth-child(6) a::before {background-position: -364px -118px;}
+.product li:nth-child(1) a:hover::before {background-position: -3px -184px;}
+.product li:nth-child(2) a:hover::before {background-position: -75px -184px;}
+.product li:nth-child(3) a:hover::before {background-position: -148px -184px;}
+.product li:nth-child(4) a:hover::before {background-position: -219px -184px;}
+.product li:nth-child(5) a:hover::before {background-position: -292px -184px;}
+.product li:nth-child(6) a:hover::before {background-position: -364px -184px;}
+.product ul {display: flex; justify-content: center; width: 100%; padding: 46px 0 41px;}
+.product li {padding: 0 55px;}
+
+/* 매거진 */
+.magazine {background: #dfd9d1; position: relative; height: 670px; overflow: hidden;}
+.magazine h2 {color: #000; font-size: 28px; text-align: center; line-height: 100%; padding: 50px 0 16px;}
+.magazine p {text-align: center; font-size: 14px; color: #3a3b36; line-height: 100%; padding-bottom: 40px;}
+.magazine .slide_box > div { position: absolute; left: 50%; top:150px; transform: translate(-50%,0);width: 1180px; height: 430px;}
+.magazine .slide_box > div:nth-child(1) { margin-left:-1280px;}
+.magazine .slide_box > div:nth-child(3) { margin-left:1280px;}
+.magazine .slide_box .left {overflow: hidden; position: relative; float: left; width: 800px; height: 430px;}
+.magazine .slide_box .left img {width: 100%;}
+.magazine .slide_box .left div {background-color: rgba(0, 0, 0, 0.5); position: absolute; right: 0; top: 0; width: 200px; height: 100%; padding: 47px 20px 0; box-sizing: border-box; }
+.magazine .slide_box .left div h3 {color: #fff; font-size: 20px; line-height: 32px;}
+.magazine .slide_box .left div span {font-weight: 100; display: block;}
+.magazine .slide_box .left div p {color: #fff; text-align: left; line-height: 24px; padding: 9px;}
+.magazine .slide_box .left div a {display: block; width: 160px; height: 45px; border: 1px solid white; color: white; font-size: 16px; text-align: center; line-height: 45px; position: absolute; right: 20px; bottom: 40px;}
+.magazine .slide_box .right {float: right; padding: 20px 20px 0; width: 380px; height: 430px; background: #fff; box-sizing: border-box;}
+.magazine .slide_box .right li {padding-bottom: 20px;}
+.magazine .slide_box .right li a {display: table; width: 100%;}
+.magazine .slide_box .right li a div {display: table-cell; padding-left: 100px; position: relative; font-size: 16px; color: #333; height: 82px; vertical-align: middle;}
+.magazine .slide_box .right li img {position: absolute; left: 0; top: 0;}
+.magazine .slide_box .right li a strong {font: 13px #000; display: block;}
+.magazine.slide .control {bottom: 48px;}
+.magazine.slide .prev {left: 50%; margin: 26px 0 0 -640px;}
+.magazine.slide .next {right: 50%; margin: 26px -640px 0 0; }
+
+
+
+
