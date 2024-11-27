@@ -237,5 +237,104 @@
             </div>
         </div>
     </section>
+    <section class="notice">
+        <div class="top">
+            <ul>
+                <li>
+                    <a href="#">테마 갤러리
+                        <span>한솔의 행복한 삶의 공간 이야기</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">블로그
+                        <span>소소한 한솔 인테리어 이야기</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">대리점 찾기
+                        <span>가까운 한솔홈데코 확인하기</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="search_wrap">
+                <div>
+                    <h2>제품 찾기</h2>
+                </div>
+                <div>
+                    <select title="검색조건 선택">
+                        <option>제품 전체검색</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="search" title="모델명 입력" placeholder="모델명을 입력하세요.">
+                </div>
+                <div>
+                    <a href="#">검색하기</a>
+                </div>
+            </div>
+        </div>
+        <article>
+            <div class="left">
+                <h2>공지</h2>
+                <ul>
+                    <li>
+                        <a href="#a"><span>한솔홈데코 홈페이지 리뉴얼 오픈 기념 공지사항</span>
+                            <p>2018.03.26</p>
+                            <div>이벤트 응모 블로그 바로가기</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#a">스토리 보드 PET(영상) 
+                            <p>2018.03.15</p>
+                            <div class="text">가구의 품격을 높이는 한솔 스토리보드 PET 새집증후근등의 사회적 문제들</div>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#">더보기</a>
+            </div>
+            <div class="right">
+                <h2>뉴스</h2>
+                <ul>
+                    <li>
+                        <a href="#a">[봄 스며드는 우리집] 한솔홈데코. 친환경 온돌마루 &middot; 벽지 &middot; 도어 '집안이 산뜻'
+                            <p>2018.03.27</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#a">습기에 강하고 열효율성 높은 'SB마루' 로 집안을 산뜻하게!
+                            <p>2018.03.16</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#a">한솔홈데코가 제안하는 인테리어 트렌드 - 강마루, 월, 중문 활용한 '소프트 빈티지'
+                            <p>2018.01.24</p>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#">더보기</a>
+            </div>
+        </article>
+    </section>
+    <section class="banner">
+        <h2 class="hide">주요 서비스</h2>
+        <ul>
+            <li><a href="#"><strong>가구컴포넌트</strong>소재부터 가구 도어까지</a></li>
+            <li><a href="#"><strong>인테리어 자재</strong>행복한 공간을 위한 토탈 인테리어</a></li>
+            <li><a href="#"><strong>연관 사업</strong>자연과 인간의 조화를 이루는 한솔</a></li>
+            <li><a href="#"><strong>고객 상담</strong>무엇이든 물어보세요</a></li>
+        </ul>
+    </section>
+    <footer>
+        
+    </footer>
+    <script>
+        //말줄임표 스크립트
+        const element = document.querySelector('.text');
+        const maxLength = 29; // 표시할 최대 글자 수
+    
+        if (element.textContent.length > maxLength) {
+            element.textContent = element.textContent.slice(0, maxLength) + '...';
+        }
+    </script>
 </body>
 </html>
