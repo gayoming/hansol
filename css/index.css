@@ -110,7 +110,7 @@ header .spot li:last-child a {padding-right: 0;}
 .notice > div.top > .search_wrap input::-webkit-input-placeholder {color: #949394; }
 .notice > div.top > .search_wrap a {display: block; height: 45px; line-height: 45px; text-align: center; color: #fff; background-color: #2d5b79; font-size: 15px; margin: 20px 0 0;}
 /* 공지,뉴스 */
-.notice article {display: flex; width: 1220px; padding: 20px 0 0; margin: 0 auto; }
+.notice article {display: flex; width: 1220px; padding: 20px 0 60px; margin: 0 auto; }
 .notice article > div {width: 580px; background-color: #f2f0ed; position: relative;} 
 .notice article > div h2 {font-size: 24px; color: #2d5b79; text-align: center; height: 72px; line-height: 72px; border-bottom: 1px solid #fff;}
 .notice article > div > a {position: absolute; right: 23px; top: 24px; width: 30px; height: 30px; background-color: #fff; border-radius: 50%; color: transparent; background: url(../img/sp_com.png) no-repeat -196px -60px #fff;}
@@ -128,3 +128,33 @@ header .spot li:last-child a {padding-right: 0;}
 .notice article > div.right ul li a {display: block; overflow: hidden; width: 400px; height: 60px; text-indent: 30px; white-space: nowrap; text-overflow: ellipsis; line-height: 60px;}
 .notice article > div.right p {position: absolute; right: 30px; top: 0;}
 
+/* 배너 */
+.banner {background: url(../img/bg_main_business.jpg) center top no-repeat; padding: 55px;}
+.banner ul {width: 1180px; margin: 0 auto; display: flex;}
+.banner ul li {flex: 1; padding: 0 0 0 20px; text-align: center;}
+.banner ul li a {font-size: 14px; color: #3e413d; display: block; height: 390px; padding: 303px 0 0; box-sizing: border-box;}
+.banner ul li a strong {font-size: 23px; color: #000; display: block;}
+.banner ul li:first-child {padding: 0;}
+.banner ul li:nth-child(1) a {background: url(../img/bg_business_link01.jpg) no-repeat;}
+.banner ul li:nth-child(2) a {background: url(../img/bg_business_link02.jpg) no-repeat;}
+.banner ul li:nth-child(3) a {background: url(../img/bg_business_link03.jpg) no-repeat;}
+.banner ul li:nth-child(4) a {background: url(../img/bg_business_link04.jpg) no-repeat;}
+
+/* footer */
+footer .top {background-color: #383f43; height: 70px; box-sizing: border-box; padding: 13px 0;}
+footer .top > div {width: 1180px; margin: 0 auto; display: flex; justify-content: space-between;}
+footer .top ul {display: flex; }
+footer .top ul li {padding: 0 19px 0 0; position: relative;}
+footer .top ul li::after {content: ""; width: 1px; height: 8px; background-color: #70767a; position: absolute; right: 9px; top: 50%; transform: translateY(-50%);}
+footer .top ul li:last-child::after {display: none;}
+footer .top ul a {color: #fff; font-size: 13px; line-height: 45px;}
+footer .top > div > div {display: flex;}
+footer .top > div > div span {background: #2a3033; color: #fff; width: 242px; height: 45px; line-height: 45px; font: 13px;}
+footer .top > div > div span strong {font-size: 20px; padding-left: 15px;}
+footer .top > div > div select {font-size: 11px; padding: 0 21px; color: #191919; width: 200px; height: 44px; box-sizing: border-box; border: none; vertical-align: 3px;}
+footer .btm {background-color: #4c5459; padding:40px 0 44px; color: #fff; }
+footer .btm p {display: inline-block; width: 131px; height: 51px; background: url(../img/sp_com.png) no-repeat -150px 0; color: transparent;}
+footer .btm ul {display: flex; justify-content: center; padding: 40px 0 14px;}
+footer .btm ul li {position: relative; padding: 0 19px 0 0;}
+footer .btm ul li::after {content: ""; width: 1px; height: 8px; background-color: #70767a; position: absolute; right: 9px; top: 50%; transform: translateY(-50%);}
+footer .btm address {font-size: 14px;}
